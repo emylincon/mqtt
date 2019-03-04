@@ -15,9 +15,9 @@
 ### Enabling Password on your Mosquito server
 * sudo mosquitto_passwd -c /etc/mosquitto/passwd admin
 * sudo nano /etc/mosquitto/conf.d/default.conf
-copy these lines to the file
-`allow_anonymous false`
-`password_file /etc/mosquitto/passwd`
+* copy these lines to the file
+* `allow_anonymous false`
+* `password_file /etc/mosquitto/passwd`
 3. sudo systemctl restart mosquitto
 
 #### Testing if  password works
