@@ -13,8 +13,8 @@
 +++++++++++++++++++++++++++++++++++
 
 ### Enabling Password on your Mosquito server
-1. sudo mosquitto_passwd -c /etc/mosquitto/passwd admin
-2. sudo nano /etc/mosquitto/conf.d/default.conf
+* sudo mosquitto_passwd -c /etc/mosquitto/passwd admin
+* sudo nano /etc/mosquitto/conf.d/default.conf
     copy these lines to the file
     -------------------------------------
     allow_anonymous false
