@@ -8,7 +8,7 @@
 * mosquitto_pub -h localhost -t test -m "Hello World"
 * mosquitto_sub -h localhost -t test
 
-**Default Port : 1883**
+`Default Port : 1883`
 
 +++++++++++++++++++++++++++++++++++
 
@@ -16,10 +16,8 @@
 * sudo mosquitto_passwd -c /etc/mosquitto/passwd admin
 * sudo nano /etc/mosquitto/conf.d/default.conf
     copy these lines to the file
-    -------------------------------------
-    allow_anonymous false
-    password_file /etc/mosquitto/passwd
-    -------------------------------------
+    `allow_anonymous false`
+    `password_file /etc/mosquitto/passwd`
 3. sudo systemctl restart mosquitto
 
 #### Testing if  password works
