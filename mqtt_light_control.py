@@ -38,4 +38,7 @@ client.on_message = on_message
 client.username_pw_set("kcqjsmsf", "z2AmYboRBXTk")
 client.connect("m24.cloudmqtt.com", 16966, 60)
 
-client.loop_forever()
+try:
+    client.loop_forever()
+except KeyboardInterrupt:
+    print('\nYou cancelled the operation.')
